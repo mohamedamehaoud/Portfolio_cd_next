@@ -1,0 +1,78 @@
+```
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacter Imed Ben Amor, développeur web et formateur, pour une formation ou un projet.">
+    <title>Contact | Imed Ben Amor, développeur web</title>
+  </head>
+  <body>
+    <header id="haut">
+      <h1>Imed Ben Amor</h1>
+      <p>Développeur web et formateur</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Me contacter</h2>
+        <p>Une question, un stage ou une alternance à proposer ? Écrivez-moi avec ce formulaire.</p>
+
+        <!-- Le formulaire n'envoie rien pour l'instant : il faudra du PHP côté serveur -->
+        <form action="#" method="post">
+          <!-- Le "for" du label correspond à l'"id" du champ : cliquer sur le libellé place le curseur dans le champ -->
+          <p>
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required>
+          </p>
+          <p>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </p>
+          <p>
+            <label for="objet">Objet</label>
+            <select id="objet" name="objet">
+              <option value="stage">Proposition de stage</option>
+              <option value="alternance">Proposition d'alternance</option>
+              <option value="projet">Projet freelance</option>
+              <option value="autre">Autre demande</option>
+            </select>
+          </p>
+          <p>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" cols="40"></textarea>
+          </p>
+          <p>
+            <input type="checkbox" id="recontact" name="recontact">
+            <label for="recontact">J'accepte d'être recontacté·e</label>
+          </p>
+          <p>
+            <button type="submit">Envoyer</button>
+          </p>
+        </form>
+      </section>
+
+      <section>
+        <h2>Mes coordonnées</h2>
+        <ul>
+          <li>Email : <a href="mailto:imed.benamor@exemple.fr">imed.benamor@exemple.fr</a></li>
+          <li>Région : Île-de-France</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Imed Ben Amor</p>
+      <p><a href="https://github.com/imed92" target="_blank" rel="noopener">Mon profil GitHub</a></p>
+      <p><a href="#haut">Retour en haut</a></p>
+    </footer>
+  </body>
+</html>
+````
